@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
+
+.row{
+    margin: 0 !important;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+#Index{
+    height: 100vh;
+    background-image: url(../Img/map-bg.png);
+    overflow: hidden;
+    background-size: cover;
+}
+.square-green{
+    margin-top: 5rem;
+    margin-left: 5rem;
+    height: 70vh;
+    min-width: 500px;
+    width: 25vw;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #044553, #3E717C);
+    padding: 2vh;
+    color: white;
+    padding: 2rem;
+    overflow: auto;
+    animation: fadeIn 3s;
+}
+.square-white{
+    height: 90vh;    
+    min-width: 500px;
+    width: 25vw;
+    border-radius: 10px;
+    background-color: rgb(195 195 195 / 46%);
+    color: white;
+    padding: 2rem;
+    overflow: hidden;
+    animation: slideLeft 3s;
+}
+.btn-calcular{
+    width: -webkit-fill-available;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    margin-top: 2rem;
+    color: white;
+    background-color: #00A07F;
+    padding: 3px;    
+    transition: 0.3s;
+}
+.btn-calcular:hover{    
+    background-color: #066451;
+}
+.icon{
+    width: 10px;
+    height: 13px;
+    opacity: 0.9;
+    position: relative;
+}
+.label-store{
+    font-size: 13px;
+}
+.card-loja{    
+    justify-content: center;
+    display: inline-flex;
+    margin-bottom: 11vh;
+}
+
+.legenda-card{
+    width: 230px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    margin-top: 150px;
+    border-radius: 10px;
+    padding:10px 20px;
+    color: rgb(39, 39, 39);
+}
+.legenda-card > h3{
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: -5px !important;
+}
+.legenda-card > label{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 11px;
+    margin-bottom: -5px !important;
+    color: #adadad;
+}
+.subtitle-card{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 12px;
+    margin-bottom: -5px !important;
+    color: black;
+}
+.footer-card{
+    justify-content: space-between;
+    display: flex;
+}
+.geo-card{
+    display: inline-flex;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+}
+input{
+    outline: none;
+    color: white;
+    padding-left: 8px;
+    margin-left: -10px;
+}
+.input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+/*Utilitários*/
+.d-inline-flex{
+    display: inline-flex;
+}
+.jc-sa{
+    justify-content: space-around;
+}
+
+/*Keyframe*/
+@keyframes slideLeft{
+    0%{margin-right: -50vw;}
+    100%{margin-right: 0vw;}
+}
+@keyframes fadeIn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
