@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# Como rodar esse projeto?
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Primeiro, você terá que ter instalado no seu computador o Node.js, o GitHub e alguma IDE que rode o projeto.
+P.S. se precisar de indicação, aposta sempre no Visual Studio Code.
 
-## Available Scripts
+# Depois que instalei, o que faço?
 
-In the project directory, you can run:
+Você vai ter que clonar o repositório no seu computador. Em cima dessa arquivo tem um botão escrito "Clone", você irá copiar o código dele e depois que tiver ajustado todas as configurações do gitHub no seu computador, irá abrir a IDE e selecionar para abrir o projeto.
 
-### `npm start`
+# E como eu vejo o projeto?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Agora você vai ter que executar o comando "npm install" (no terminal da IDE ou no cmd) para poder instalar todos os arquivos e extensões que utilizei no meu projeto.
+Após a finalização, você irá rodar o comando "npm start", e o projeto vai estar rodando tudo certo no seu link http://localhost:3000/
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Não estou entendo a interface.
 
-### `npm test`
+Deixa eu te explicar, inicialmente você verá um componente verde com 2 espaços para inserir a localização do cliente com 2 parâmetros.
+Depois, você preencherá o número de lojas ao redor juntamente com as posições de cada uma, uma por linha.
+Finalizando, você irá clicar no botão de calcular e verá quais as 3 lojas mais próximas do cliente.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Quais as tecnologias utilizadas?
 
-### `npm run build`
+Eu utilizei o JavaScript, Html, CSS e Reactjs.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Qual a lógica do projeto?
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Como não foi optado pela utilização de um banco de dados, por meio de estados a localização do cliente foi armazenada, e todas as lojas foram inseridas em um array. Em seguida foi calculado a distância de cada loja para o cliente e inserido em um array de objetos com os parâmetros de localização e a distância de cada unidade, sendo lido e mapeado dentro do body com o limite de 3 lojas.
