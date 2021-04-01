@@ -102,7 +102,7 @@ export default class Index extends Component {
                 <div className="col"><label className="label-store">Posição Y</label></div>
             </div>
             <div className="row">
-            <img src={pin} className="icon"/><input type="number" className="input"/> &nbsp;
+            <img src={pin} className="icon-pin"/><input type="number" className="input"/> &nbsp;
             <input type="number" className="input"/> 
             </div>
         </div>)

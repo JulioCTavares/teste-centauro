@@ -53,12 +53,20 @@ body{
 .btn-calcular:hover{    
     background-color: #066451;
 }
+
 .icon{
+    width: 13px;
+    height: 13px;
+    opacity: 0.9;
+    position: relative;
+}
+.icon-pin{
     width: 10px;
     height: 13px;
     opacity: 0.9;
     position: relative;
 }
+
 .label-store{
     font-size: 13px;
 }
@@ -120,6 +128,27 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0; 
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f100;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #27515a;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
 /*Utilitários*/
 .d-inline-flex{
     display: inline-flex;
@@ -130,8 +159,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 /*Keyframe*/
 @keyframes slideLeft{
-    0%{margin-right: -50vw;}
-    100%{margin-right: 0vw;}
+    0%{margin-right: -50vw; opacity: 0;}
+    100%{margin-right: 0vw; opacity: 1;}
 }
 @keyframes fadeIn{
     0%{opacity: 0;}
